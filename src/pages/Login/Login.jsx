@@ -34,7 +34,7 @@ const handleSubmission=()=>{
     signInWithEmailAndPassword(auth,value.email,value.pass).then(
         async (res) => {
             setSBtn(false);
-            navigate("/");
+            navigate("/Land");
         }
     ).catch((err)=>{
         setSBtn(true);

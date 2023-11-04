@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './style.css';
 import data from "../data/templateData.json"
+import { Link } from "react-router-dom";
 
 
 function Search() {
@@ -46,7 +47,9 @@ function Search() {
                       <h3 className="text-lg font-semibold  ">{val.title}</h3>
                       <h2 className="text-base font-light ">{val.desc} </h2>
                       <p className="price">views :{val.views}</p>
-                      <button className="text-lg bg-green-500 max-w-fit px-2 py-1 rounded-lg text-white"> Play</button>
+                      <button className="text-lg bg-green-500 max-w-fit px-2 py-1 rounded-lg text-white" > <Link to="/VideoPlayer">
+       Play
+      </Link></button>
                   </div> 
                 )
               })

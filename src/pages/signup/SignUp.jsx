@@ -41,7 +41,7 @@ const SignUp = () => {
                 });
                 
                 console.log(user)
-                navigate("/");
+                navigate("/Land");
             }
         ).catch((err)=>{
             setSBtn(true);
