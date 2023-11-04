@@ -1,7 +1,16 @@
-import React from 'react'
-import {RxHamburgerMenu} from "react-icons/rx";
+
+import {MdSupervisorAccount} from "react-icons/md";
 import Search from '../../components/search';
+import React, { useState } from 'react';
+import Hamburg from "../../components/Hamburg";
+
+
+
+
+
 const Land = () => {
+
+  const [openProfile , setOpenProfile] = useState(false);
 
 
   return (
@@ -9,8 +18,8 @@ const Land = () => {
     <div className='justify-between flex flex-row m-4'>
     <img src = "/logo.png" alt = "reload"/>
     <h2 className='text-green-500 font-bold text-4xl '>CogniLink</h2>
-    <div className='text-green-500 font-bold text-4xl'>
-  <  RxHamburgerMenu/>
+    <div className='text-green-600 font-bold text-4xl'>
+  <  MdSupervisorAccount onClick={()=> setOpenProfile((prev=>!prev))}/>
     </div>
     </div>
 
@@ -21,10 +30,21 @@ const Land = () => {
 
     </div>
 
+    
+
        
   <Search/>
+  {
+    openProfile && (<Hamburg/>)
+   }
+
+
     </div>
+     
+     
   )
+
+  
 }
 
 export default Land

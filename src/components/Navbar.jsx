@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
+
     <div className='flex flex-row justify-between align-middle p-5 mt-5 '>
         <img src = "/logo.png" alt = "reload"/>
         <ul className='flex flex-row font-medium text-xl text-gray-500'>
@@ -19,12 +20,6 @@ const Navbar = () => {
        Login
       </Link>
   </Button>
-  
-
-        
-
-
-
     </div>
   )
 }
