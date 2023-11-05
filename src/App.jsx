@@ -6,6 +6,9 @@ import { ChakraProvider } from '@chakra-ui/react'
 import { Routes, Route } from "react-router-dom"
 import Land from "./pages/LandingPage/Land"
 import VideoPlayer from "./components/videoPlayer"
+import Profile from "./pages/Profile/Container"
+import Upload from "./uploadCloud/upload"
+
 
 function App() {
 
@@ -14,13 +17,16 @@ function App() {
     <>
      <ChakraProvider>
       <Routes>
-        <Route path="/" element = {<Home/>}/>
+
+         <Route path="/" element = {<Home/>}/>
          <Route path="/login" element={ <Login/> } />
-        <Route path="/signUp" element={ <SignUp/> } />
-        <Route path = "/Land" element={<Land/>} />
-        <Route path = "/VideoPlayer" element = {<VideoPlayer
+        <Route path="/signUp" element={ <SignUp/> } /> 
+         <Route path = "/Land" element={<Land/>} /> 
+         <Route path = "/VideoPlayer" element = {<VideoPlayer
         height ={750}
         width = {900}/>} />
+        <Route path = "/profile" element={<Profile/>} />
+        <Route path = "/upload" element = {<Upload/>} />
 
       </Routes>
       </ChakraProvider>

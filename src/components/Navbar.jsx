@@ -10,8 +10,8 @@ const Navbar = () => {
         <ul className='flex flex-row font-medium text-xl text-gray-500'>
             <li className='mx-10'>Home</li>
             <li className='mx-10'>About</li>
-            <li className='mx-10'>Lorem</li>
-            <li className='mx-10'>ipsum</li>
+            <li className='mx-10'>AboutUs</li>
+            <li className='mx-10'>ContactUs</li>
         </ul>
         
 

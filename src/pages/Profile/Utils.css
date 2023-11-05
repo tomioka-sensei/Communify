@@ -1,0 +1,19 @@
+.flexi{
+    display: flex;
+}
+
+.flexi_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.width100{
+    width: 100vw;
+}
+div.width98{
+    width: 98vw;
+}
+.margr2_5{
+    margin-right: 2.5rem;
+}

@@ -1,5 +1,5 @@
 import React, { useEffect , useRef } from 'react'
-
+import { Link } from "react-router-dom";
 const VideoPlayer = (props) => {
   const {width ,height} = props;
     const cloudinaryRef = useRef();
@@ -13,6 +13,8 @@ const VideoPlayer = (props) => {
         })
     },[])
   return (
+    <>
+    
     <video className='w-screen h-screen'
     ref = {videoRef}
     data-cld-public-id = "ws5qgstrv2w9ponzqum9"
@@ -20,8 +22,9 @@ const VideoPlayer = (props) => {
     height={height}
     controls
     {...props}
-  
+    
     />
+    </>
   )
 }
 

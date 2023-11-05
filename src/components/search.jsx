@@ -2,6 +2,11 @@ import React, {useState} from "react";
 import './style.css';
 import data from "../data/templateData.json"
 import { Link } from "react-router-dom";
+import { FcLike} from "react-icons/fc";
+import {BiCommentDetail} from "react-icons/bi";
+import {BiShare} from "react-icons/bi";
+
+
 
 
 function Search() {
@@ -46,7 +51,11 @@ function Search() {
                       <img src={val.image} alt="" />
                       <h3 className="text-lg font-semibold  ">{val.title}</h3>
                       <h2 className="text-base font-light ">{val.desc} </h2>
-                      <p className="price">views :{val.views}</p>
+                      <div className="items-center justify-center align-middle">
+                      <p className="price ">views :{val.views}</p>
+                       <p className="flex flex-row-reverse gap-4 "><FcLike/> <BiCommentDetail/> <BiShare/></p>
+                      </div>
+
                       <button className="text-lg bg-green-500 max-w-fit px-2 py-1 rounded-lg text-white" > <Link to="/VideoPlayer">
        Play
       </Link></button>
