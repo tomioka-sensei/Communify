@@ -22,3 +22,7 @@ Empowerment through Small Wins:
 
 Celebrating and sharing small victories or life hacks significantly motivates differently abled individuals. Providing a space to share these solutions can empower them and encourage them to engage more in their community.
 The goal is to address these problem statements by creating a community-driven platform like Sharability (or CogniLink) that offers a practical, accessible, and supportive space for differently abled individuals to share life hacks, connect with peers, and empower each other.
+
+VIDE0 WALK THROUGH :-
+
+https://www.loom.com/share/b71d9358942e42598ae1ecd776708a87?sid=41649196-d009-4671-a27a-7b3127751959 
